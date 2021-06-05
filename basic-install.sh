@@ -10,7 +10,7 @@ echo Update System
 sudo apt update && sudo apt upgrade -y
 
 echo Basic Installation
-sudo apt install -y curl neovim upower acpi 
+sudo apt install -y curl neovim upower acpi build-essential g++
 
 echo Install Network Manager
 sudo apt --no-install-recommends install -y network-manager 
