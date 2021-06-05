@@ -13,7 +13,7 @@ echo Basic Installation
 sudo apt install -y curl neovim upower acpi dialog
 
 echo Install development stuff
-sudo apt install -y build-essential g++ pkg-config libssl-dev
+sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-generic
 
 echo Install Network Manager
 sudo apt --no-install-recommends install -y network-manager 
