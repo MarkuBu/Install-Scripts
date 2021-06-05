@@ -7,7 +7,7 @@ sudo apt install -y curl
 echo Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-source ~/.cargo/env
+source $HOME/.cargo/env
 
 echo Install Rust Analyzer
 curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.cargo/bin/rust-analyzer
