@@ -10,7 +10,7 @@ echo Update System
 sudo apt update && sudo apt upgrade -y
 
 echo Basic Installation
-sudo apt install -y curl neovim upower acpi dialog software-properties-common
+sudo apt install -y curl neovim upower acpi dialog software-properties-common xterm
 
 echo Install development stuff
 sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-generic
