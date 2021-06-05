@@ -11,3 +11,8 @@ Then you need to clone this repository
 
     git clone https://github.com/MarkuBu/Install-Scripts.git
 
+Run the basic install script first
+    cd Install-Scripts
+    sh basic-install.sh
+
+
