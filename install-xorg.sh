@@ -8,4 +8,4 @@ sudo apt update && sudo apt upgrade -y
 # This will install nodm for now. Will be improved later
 
 echo Install Xorg ---------------------------------------------------------
-sudo apt install xorg nodm
+sudo apt install -y xorg nodm
