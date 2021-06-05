@@ -3,5 +3,7 @@
 clear
 echo Basic Installation
 
-sudo apt install curl neovim upower acpi 
-sudo apt-get --no-install-recommends install network-manager 
+sudo apt install -y curl neovim upower acpi 
+
+echo Install Network Manager
+sudo apt --no-install-recommends install -y network-manager 
