@@ -13,7 +13,7 @@ echo Update System
 sudo apt update -y 
 
 echo Basic Installation
-sudo apt install -y curl neovim upower acpi dialog xterm fzf 
+sudo apt install -y curl neovim upower acpi dialog xterm fzf zip unzip 
 
 echo Install development stuff
 sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-generic libssl-dev
