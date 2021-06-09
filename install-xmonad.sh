@@ -2,4 +2,11 @@
 
 clear
 
-sudo apt install -y xmonad libghc-xmonad-extras-dev libghc-xmonad-contrib-dev libghc-xmonad-wallpaper-dev libghc-xmonad-dev xmobar dmenu nitrogen
+echo Update system --------------------------------------------------------
+sudo apt update && sudo apt upgrade -y
+
+
+echo Install Xorg and Xmonad ----------------------------------------------
+sudo apt install -y xorg xmonad xmobar
+sudo apt install -y --no-install-recommended lightdm
+sudo apt install -y lightdm-settings slick-greeter light-locker lightdm-gtk-greeter 
