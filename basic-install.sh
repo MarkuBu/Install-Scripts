@@ -28,6 +28,7 @@ echo Install development stuff
 echo ---------------------------------------
 echo
 sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-generic libssl-dev
+sudo apt install -y binutils gcc-avr avr-libc avrdude
 
 echo Install Network Manager
 echo ---------------------------------------

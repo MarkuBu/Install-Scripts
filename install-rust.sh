@@ -43,6 +43,6 @@ cargo install cargo-generate
 
 # Currently necessary for avr-hal
 rustup toolchain install nightly-2021-01-07
-rustup component add rust-src --toolchain nightly-2021-01-07
+rustup component add rust-src --toolchain nightly-2021-01-07 --profile minimal
 rustup toolchain install nightly
 rustup component add rust-src --toolchain nightly
