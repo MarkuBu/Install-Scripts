@@ -23,6 +23,10 @@ chmod +x ~/.cargo/bin/rust-analyzer
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+cargo install sccache
+echo "[build]\n
+rustc-wrapper = \"/path/to/sccache\"" >> ~/.cargo/config
+
 cargo install cargo-update
 
 clear
@@ -46,3 +50,10 @@ rustup toolchain install nightly-2021-01-07
 rustup component add rust-src --toolchain nightly-2021-01-07 --profile minimal
 rustup toolchain install nightly
 rustup component add rust-src --toolchain nightly
+
+# Components for avr-device
+cargo install atdf2svd
+cargo install svd2rust
+cargo install form
+rustup component add --toolchain nightly rustfmt
+pip3 install --user svdtools
