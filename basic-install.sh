@@ -31,6 +31,7 @@ sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-gene
 sudo apt install -y binutils gcc-avr avr-libc avrdude dfu-util dfu-programmer teensy-loader-cli 
 sudo apt install -y gettext libtool libtool-bin autoconf automake cmake clang-format clang-format-10
 sudo apt install -y binutils-arm-none-eabi gcc-arm-none-eabi 
+sudo apt install -y libclang-cpp10 libllvm10 libnewlib-arm-none-eabi libnewlib-dev libstdc++-arm-none-eabi-newlib
 
 
 echo Install Network Manager
