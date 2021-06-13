@@ -28,8 +28,9 @@ echo Install development stuff
 echo ---------------------------------------
 echo
 sudo apt install -y build-essential g++ pkg-config libssl-dev linux-headers-generic libssl-dev
-sudo apt install -y binutils gcc-avr avr-libc avrdude
-sudo apt install -y gettext libtool libtool-bin autoconf automake cmake 
+sudo apt install -y binutils gcc-avr avr-libc avrdude dfu-util dfu-programmer teensy-loader-cli 
+sudo apt install -y gettext libtool libtool-bin autoconf automake cmake clang-format clang-format-10
+sudo apt install -y binutils-arm-none-eabi gcc-arm-none-eabi 
 
 
 echo Install Network Manager
