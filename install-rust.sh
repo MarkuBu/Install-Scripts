@@ -24,8 +24,9 @@ chmod +x ~/.cargo/bin/rust-analyzer
 export PATH="$HOME/.cargo/bin:$PATH"
 
 cargo install sccache
-echo "[build]\n
-rustc-wrapper = \"/path/to/sccache\"" >> ~/.cargo/config
+rm $HOME/.cargo/config
+echo "[build]
+rustc-wrapper = \"$HOME/.cargo/bin/sccache\"" >> ~/.cargo/config
 
 cargo install cargo-update
 
@@ -47,7 +48,7 @@ cargo install cargo-generate
 
 # Currently necessary for avr-hal
 rustup toolchain install nightly-2021-01-07
-rustup component add rust-src --toolchain nightly-2021-01-07 --profile minimal
+rustup component add rust-src --toolchain nightly-2021-01-07 
 rustup toolchain install nightly
 rustup component add rust-src --toolchain nightly
 
